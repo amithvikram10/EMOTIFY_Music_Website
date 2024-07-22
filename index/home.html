@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Emotify</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<section>
+<div class="circle"></div>
+<header>
+<a href ="#" ><img src="../images/logonew.jpg" class="logo"></a>
+<ul>
+<li><a href="#HOME">Home</a></li>
+<li><a href="#MOOD">Mood</a></li>
+<li><a href="#CONTACT US">Contact Us</a></li>
+
+</header><br><br>
+<div class="content" id="HOME">
+<div class="textBox">
+<br><br><h1>What's your mood?<br><br><br><br><br>We got a <span>song for you!</span></h1>
+<br><br><p>Vibing to music isn't the same anymore,<br>signup to experience music for all moods!<br>
+Dance to the beat,enjoy your retreat!</p>
+</div>
+<div class="imgBox">
+<img src="../images/home.png" height="300px" class="emotify">
+</div>
+</div>
+<ul class="thumb" id="MOOD">
+<li><img src="../images/happy1.png" onclick="imgSlider('../images/happy1.png'); changeCircleColor('#fadadd')">
+<center><a href="happy.html" class="button1">&#9199;HAPPY</a><br><br></center></li>
+
+<li><img src="../images/love.png" onclick="imgSlider('../images/love.png'); changeCircleColor('#da8ee7')">
+<center><a href="love.html" class="button1">&#9199;LOVE</a><br><br></center></li>
+
+<li><img src="../images/workout.png" onclick="imgSlider('../images/workout.png'); changeCircleColor('#357ec7')">
+<center><a href="workout.html" class="button1">&#9199;WORKOUT</a><br><br></center></li>
+
+<li><img src="../images/depression.png" onclick="imgSlider('../images/depression.png'); changeCircleColor('#81007f')">
+<center><a href="breakup/breakup.html" class="button1">&#9199;BREAKUP</a><br><br></center></li>
+
+<li><img src="../images/party.png" onclick="imgSlider('../images/party.png'); changeCircleColor('#f7e7ce')">
+<center><a href="party.html" class="button1">&#9199;PARTY</a><br><br></center></li>
+
+<li><img src="../images/angry.png" onclick="imgSlider('../images/angry.png'); changeCircleColor('#ffcbc4')">
+<center><a href="angry.html" class="button1">&#9199;ANGRY</a><br><br></center></li>
+
+</ul>
+<ul class="sci" id="CONTACT US">
+<li><img src="../images/facebook.png"></li><br>
+<li><img src="../images/instagram.png"></li><br>
+<li><img src="../images/texting.png"></li>
+</ul>
+</section>
+<script type="text/javascript">
+function imgSlider(anything){
+document.querySelector('.emotify').src=anything;
+}
+function changeCircleColor(color){
+const circle=document.querySelector('.circle');
+circle.style.background=color;
+}
+
+</script>
+</body>
+</html>
+
+
